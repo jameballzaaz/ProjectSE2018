@@ -1,9 +1,6 @@
 <html>
     <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <title >
-        กลุ่ม 3
-        </title>
         <u style="color: rgba(247, 147, 34, 0.801); font-size: 50px;">
             ระบบจัดการสำหรับบริษัททัวร์ 
         </u>
@@ -37,10 +34,8 @@
                   <tr>
                     <td>-ระบบแอดมิน<br>-จัดการทัวร์<br>-จักเก็บข้อมูลทัวร์<br></td>
                     <td>-มีระบบสมาชิก<br>-จองทัวร์<br>-ดูตารางทัวร์<br>-ดูวันเวลาทัวร์<br>-ข้อมูลข่างสาร<br>-ดูประวัติการจองทัวร์<br>-ระบบชำระเงิน</td>
-
                 </tbody>
               </table>
-        
         <u>เครื่องมือที่ใช้</u>
         <p>API</p>
     </body>
