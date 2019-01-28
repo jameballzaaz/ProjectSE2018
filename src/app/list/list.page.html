@@ -4,21 +4,45 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>
-      List
+      รายการทัวร์
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-list>
-    <ion-item *ngFor="let item of items">
-      <ion-icon [name]="item.icon" slot="start"></ion-icon>
-      {{item.title}}
-      <div class="item-note" slot="end">
-        {{item.note}}
-      </div>
-    </ion-item>
-  </ion-list>
+<ion-content padding>
+  <ion-list *ngFor="let item of tour">
+    <ion-item>
+        <ion-label>
+          <h1><ion-icon name="airplane" color="primary"></ion-icon> 
+              {{ item.name }} <ion-icon name="airplane" color="primary">
+              </ion-icon> <br/> <ion-badge slot="end" color="danger" >{{ item.day }}  </ion-badge>
+              <ion-badge slot="end" color="success" >{{item.price}} บาท!!!</ion-badge> 
+            </h1> 
+            <h2>{{ item.description }}</h2>
+            วันเดินทาง {{ item.time | date: 'MMMM dd , yyyy' }} <br/>
+            <P>{{ item.date }}</P>
+          </ion-label>
+
+          <ion-img> src='' </ion-img>
+
+
+      </ion-item>
+      
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+      </ion-list>
   <!--
     <div *ngIf="selectedItem" padding>
       You navigated here from <b>{{selectedItem.title }}</b>
