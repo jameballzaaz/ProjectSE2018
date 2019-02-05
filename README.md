@@ -51,7 +51,7 @@
    * 10. As a ผู้ดูแล, I want to ดูตารางการจองทัวร์ของลูกค้า, So that เตรียมพร้อมสำหรับการทัวร์
    
    
-* trello https://trello.com/b/X8kF4xM9/software-eng
+# trello https://trello.com/b/X8kF4xM9/software-eng
 
   
    
