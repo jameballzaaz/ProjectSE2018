@@ -1,22 +1,20 @@
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LoginPage } from './login.page';
+import { ListEditComponent } from './list-edit.component';
 
-describe('LoginPage', () => {
-  let component: LoginPage;
-  let fixture: ComponentFixture<LoginPage>;
+describe('ListEditComponent', () => {
+  let component: ListEditComponent;
+  let fixture: ComponentFixture<ListEditComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LoginPage ],
-      schemas: [CUSTOM_ELEMENTS_SCHEMA],
+      declarations: [ ListEditComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LoginPage);
+    fixture = TestBed.createComponent(ListEditComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -25,4 +23,3 @@ describe('LoginPage', () => {
     expect(component).toBeTruthy();
   });
 });
-

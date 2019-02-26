@@ -10,8 +10,6 @@ export class ListPage implements OnInit {
 
   tour : Tour[];
 
-  
-  
   constructor(private tourService : TourService) { }
 
   ngOnInit() {
@@ -21,6 +19,14 @@ export class ListPage implements OnInit {
       }
     );
   }    
+
+
+  deletetour(item){
+    return this.tourService.deletetour(item.id)
+  }
+
+
+
 }
    
 

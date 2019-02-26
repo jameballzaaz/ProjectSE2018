@@ -5,23 +5,23 @@ import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: 'app.component.html'
+  selector: 'app-ListEditComponent',
+  templateUrl: 'list-edit.component.html'
 })
-export class AppComponent {
+export class ListEditComponent {
   public appPages = [
     {
-      title: 'หน้าแรก',
+      title: 'หน้าแรก2',
       url: '/home',
       icon: 'home'
     },
     {
-      title: 'ทัวร์',
+      title: 'ทัวร์ต่างประเทศ2',
       url: '/list',
       icon: 'paper-plane'
     },
     {
-      title: 'Login',
+      title: 'Login2',
       url: '/login',
       icon: 'person'
       

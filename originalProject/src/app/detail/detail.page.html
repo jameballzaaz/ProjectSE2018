@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-button routerLink="/list" routerDirection="back" color="light" size="small" fill=undefined>
+        <ion-icon name="backspace" slot="start" color="primary" size="large" ></ion-icon>
+      </ion-button>
+    <ion-title>เพิ่มรายการทัวร์</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+    <ion-list>
+        <ion-item>
+            <ion-input type="text" placeholder="ชื่อทัวร์"[(ngModel)]="tour.name"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-input type="text" placeholder="รายละเอียดทัวร์"[(ngModel)]="tour.description"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-input type="text" placeholder="...วัน ...คืน"[(ngModel)]="tour.day"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-input type="number" placeholder="ราคา"[(ngModel)]="tour.price"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-input type="timestamp" placeholder="วันขึ้นทาง วว/ดด/ปปปป"[(ngModel)]="tour.date"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-input type="number" placeholder="date of long-num-time"[(ngModel)]="tour.time"></ion-input>
+        </ion-item>
+        
+        
+      </ion-list>
+  <ion-button (click)="SaveTour()"expand="full">
+    Save
+  </ion-button>
+
+</ion-content>

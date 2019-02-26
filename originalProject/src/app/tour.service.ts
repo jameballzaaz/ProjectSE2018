@@ -7,7 +7,7 @@ export interface Tour {
   name : string;
   description : string;
   price : number;
-  date : Timestamp<any>;
+  date : Timestamp<string>;
   day : string;
   time : number;
 }
@@ -35,7 +35,25 @@ export class TourService {
     );
    }
 
-   gettour(){
+  gettour(){
      return this.tour;
   }
+
+  addtour(tour : Tour){
+    return this.tourCollection.add(tour);
+  }
+
+  deletetour(id){
+    return this.tourCollection.doc(id).delete();
+  }
+
+  updatetour(tour : Tour,id){
+    return this.tourCollection.doc(id).update(tour);
+  }
+
+  
+
+
+
+
 }

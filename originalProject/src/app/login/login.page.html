@@ -11,15 +11,26 @@
 
 <ion-content padding>
 
-  <ion-item>
-     <ion-input required type="text" placeholder="Enter Username"></ion-input>
-   </ion-item>
-  <ion-item>
-      <ion-input required type="text" placeholder="Enter Password"></ion-input>
+  <ion-item lines="none">
+    <img src="/assets/50818531_2184268618298294_5445081721651331072_n.jpg"> <br/>
   </ion-item>
 
 
-  <ion-button shape="round" color="primary" fill="solid" size="Default" type="submit" expand="block">Log in</ion-button>
+  <ion-item>
+    <ion-label position="floating">Username</ion-label>
+     <ion-input type="text" value=''></ion-input>
+   </ion-item>
+  <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" value=''></ion-input>
+  </ion-item>
+
+
+
+  <br/><br/>
+  <ion-button shape="round" size="Default" type="submit" expand="block" (click)="loading()" >Log in</ion-button>
+  <ion-button shape="round" size="Default" type="submit" expand="block" routerLink="/singup" routerDirection="forward">Sing up</ion-button>
+  <ion-button size="small" fill=undefined routerLink="/login-admin" routerDirection="forward" >Administrator</ion-button>
 
 
 
