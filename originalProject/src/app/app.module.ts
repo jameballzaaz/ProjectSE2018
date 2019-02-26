@@ -12,10 +12,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AngularFireModule } from '@angular/fire'
 import { AngularFirestoreModule } from '@angular/fire/firestore'
 import { environment } from 'src/environments/environment.prod';
-import { ListEditComponent } from './list-edit/list-edit.component'
+
 
 @NgModule({
-  declarations: [AppComponent, ListEditComponent],
+  declarations: [AppComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, AngularFireModule.initializeApp(environment.firebase), AngularFirestoreModule],
   providers: [
