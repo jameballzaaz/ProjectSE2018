@@ -11,7 +11,10 @@ const routes: Routes = [
   { path: 'login-admin', loadChildren: './login-admin/login-admin.module#LoginAdminPageModule' },
   { path: 'singup', loadChildren: './singup/singup.module#SingupPageModule' },
   { path: 'homelogin', loadChildren: './homelogin/homelogin.module#HomeloginPageModule' },
-  { path: 'homelogin-admin', loadChildren: './homelogin-admin/homelogin-admin.module#HomeloginAdminPageModule' }
+  { path: 'homelogin-admin', loadChildren: './homelogin-admin/homelogin-admin.module#HomeloginAdminPageModule' },
+  { path: 'edit-list', loadChildren: './edit-list/edit-list.module#EditListPageModule' },
+  { path: 'contacts', loadChildren: './contacts/contacts.module#ContactsPageModule' },
+  { path: 'edit-member', loadChildren: './edit-member/edit-member.module#EditMemberPageModule' },
 ];
 
 @NgModule({

@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-button routerLink="/homelogin-admin" routerDirection="back" color="light" size="small" fill=undefined>
+        <ion-icon name="backspace" slot="start" color="primary" size="large" ></ion-icon>
+      </ion-button>
+    <ion-title>แก้ไขข้อมูลลูกค้า</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding >
+
+        <ion-list *ngFor="let item of userAccount">
+          <ion-item-sliding >
+              <ion-item >
+                <ion-label>
+                  <h1>
+                     {{ item.name }} {{ item.surname }}<br/> 
+                    <ion-badge slot="end" color="light" >E-mail : {{ item.email }}  </ion-badge> <br>
+                    <ion-badge slot="end" color="light" >Mobile Number : {{item.mobilenumber}}  </ion-badge> <br>
+                    <ion-badge slot="end" color="success" >Password : {{item.password}}</ion-badge> 
+                    </h1> 
+                
+                  </ion-label>
+                </ion-item>  
+      
+      
+                <ion-item-options side="end">
+      
+                   <!-- <ion-item-option color="success" > 
+                        <ion-icon name="create" slot="start" color="light" size="large" [routerLink]=" ['/detail',item.id] "> </ion-icon>   
+                      </ion-item-option>-->
+      
+                    <ion-item-option color="danger" (click)="deleteuser(item)"> 
+                      <ion-icon name="trash" slot="start" color="light" size="large"> </ion-icon>
+                    </ion-item-option>
+                  
+      
+                   
+                  </ion-item-options>    
+          </ion-item-sliding>     
+        </ion-list>
+     
+
+</ion-content>

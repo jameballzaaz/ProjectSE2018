@@ -17,7 +17,12 @@ import { environment } from 'src/environments/environment.prod';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, AngularFireModule.initializeApp(environment.firebase), AngularFirestoreModule],
+  imports: [BrowserModule, 
+            IonicModule.forRoot(), 
+            AppRoutingModule, 
+            AngularFireModule.
+            initializeApp(environment.firebase), 
+            AngularFirestoreModule],
   providers: [
     StatusBar,
     SplashScreen,

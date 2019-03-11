@@ -15,31 +15,31 @@
 
   <ion-item>
     <ion-label position="stacked">Name</ion-label>
-     <ion-input type="text" value=''></ion-input>
+     <ion-input type="text" [(ngModel)]="userAccount.name" value=''></ion-input>
   </ion-item>
   <ion-item>
       <ion-label position="stacked">Surname</ion-label>
-       <ion-input type="text" value=''></ion-input>
+       <ion-input type="text" [(ngModel)]="userAccount.surname" value=''></ion-input>
   </ion-item>
   <ion-item>
       <ion-label position="stacked">Email</ion-label>
-       <ion-input type="email" value=''></ion-input>
+       <ion-input type="email" [(ngModel)]="userAccount.email" value=''></ion-input>
   </ion-item>
   <ion-item>
       <ion-label position="stacked">Mobile Number</ion-label>
-       <ion-input type="numeric" value=''></ion-input>
+       <ion-input type="numeric" [(ngModel)]="userAccount.mobilenumber" value=''></ion-input>
   </ion-item>
   <ion-item>
       <ion-label position="stacked" >Password</ion-label>
-       <ion-input type="password" value='' placeholder="Must be at least 8 characters." maxlength="16" ></ion-input>
+       <ion-input type="password" value='' [(ngModel)]="userAccount.password" placeholder="Must be at least 8 characters." maxlength="16" ></ion-input>
   </ion-item>
   <ion-item>
       <ion-label position="stacked">Confirm Password</ion-label>
-       <ion-input type="password" value=''></ion-input>
+       <ion-input type="password" value=''  [(ngModel)]="userAccount.confirmpassword"></ion-input>
   </ion-item>
   <br/>
   <br/>
-  <ion-button shape="round" size="Default" type="submit" expand="block"  >Create Account</ion-button>
+  <ion-button shape="round" size="Default" type="submit" expand="block" (click)="SaveUser()" >Create Account</ion-button>
    
 
 </ion-content>

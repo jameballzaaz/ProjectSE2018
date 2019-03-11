@@ -1,9 +1,16 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>homelogin admin</ion-title>
+      <ion-button routerLink="/login-admin" routerDirection="back" color="light" size="small" fill=undefined>
+        <ion-icon name="backspace" slot="start" color="primary" size="large" ></ion-icon>
+      </ion-button>
+    <ion-title>ผู้ดูแลระบบ</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
+
+    <ion-button shape="round" size="Default" type="submit" expand="block" routerLink="/edit-list" routerDirection="forward">แก้ไขรายการทัวร์</ion-button>
+
+    <ion-button shape="round" size="Default" type="submit" expand="block" routerLink="/edit-member" routerDirection="forward">แก้ไขข้อมูลลูกค้า</ion-button>
 
 </ion-content>

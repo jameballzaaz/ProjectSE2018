@@ -21,9 +21,15 @@ export class AppComponent {
       icon: 'paper-plane'
     },
     {
-      title: 'Login',
+      title: 'เข้าสู่ระบบ',
       url: '/login',
       icon: 'person'
+      
+    },
+    {
+      title: 'ติดต่อเรา',
+      url: '/contacts',
+      icon: 'contact'
       
     }
   ];
